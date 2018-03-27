@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_lock_data"
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:title="LockData"
+        android:onClick="lockData"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item android:title="Clear All Sessions"
+        android:onClick="onClickClearCookies"
+        android:id="@+id/clear_cookies" />
+    <item android:title="About"
+        android:id="@+id/about_item" />
+</menu>

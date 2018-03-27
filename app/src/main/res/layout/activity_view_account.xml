@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gptwgl.swiftlogin.ViewAccount">
+
+    <ImageView
+        app:srcCompat="@drawable/facebook"
+        android:id="@+id/view_acc_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Site Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/view_acc_logo"
+        app:layout_constraintTop_toTopOf="@+id/view_acc_logo"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextDark" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_acc_site_name"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/view_acc_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/view_acc_logo"
+        android:textColor="@color/colorTextLight" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextDark"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_acc_logo" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_acc_username"
+        android:textSize="18sp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        android:textColor="@color/colorTextLight" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stextview"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextDark"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_acc_email"
+        app:layout_constraintBottom_toBottomOf="@+id/view_acc_email" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_acc_email"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/view_acc_username"
+        android:textColor="@color/colorTextLight"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_acc_username" />
+
+    <TextView
+        android:text="URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextDark"
+        app:layout_constraintBottom_toBottomOf="@+id/view_acc_site_url"
+        app:layout_constraintTop_toTopOf="@+id/view_acc_site_url"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordView"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextDark"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintBottom_toBottomOf="@+id/password" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_acc_site_url"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextLight"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView9"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_acc_email"
+        android:textAlignment="viewStart" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:textSize="18sp"
+        android:layout_width="225dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_acc_site_url"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/passwordView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:text="Create Session"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/session_button"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="onClickSessionBtn"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_visibility_black_24dp"
+        android:id="@+id/visibilityIV"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password" />
+
+</android.support.constraint.ConstraintLayout>

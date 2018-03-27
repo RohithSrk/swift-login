@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Edit"
+        android:onClick="onClickEdit"
+        android:id="@+id/menu_acc_edit" />
+    <item android:title="Delete"
+        android:id="@+id/menu_acc_delete"
+        android:onClick="onClickDelete" />
+</menu>

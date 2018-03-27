@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:padding="16dp">
+
+    <ImageView
+        app:srcCompat="@drawable/facebook"
+        android:id="@+id/homelv_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homelv_site_name"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextDark"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/homelv_logo" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homelv_email"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/homelv_site_name"
+        android:textColor="@color/colorTextLight"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/homelv_site_name" />
+</android.support.constraint.ConstraintLayout>
